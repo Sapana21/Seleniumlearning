@@ -14,10 +14,10 @@ public class login {
 		WebDriver driver =new ChromeDriver();
 		driver.get("https://c2ta.co.in/login/");
 		driver.findElement(By.id("username")).sendKeys("Anurag");
-		//driver.findElement(By.id("password")).sendKeys("123$Xyz");
-		//driver.findElement(By.xpath("//*[@id=\"post-305\"]/div/div/div/div/div[2]/form/p[1]/label/input")).click();
-		//driver.findElement(By.xpath("//*[@id=\"post-305\"]/div/div/div/div/div[2]/form/p[2]/button")).click();
-		driver.findElement(By.linkText("Lost your password?")).click();
+		driver.findElement(By.id("password")).sendKeys("123$Xyz");
+		driver.findElement(By.xpath("//*[@id=\"post-305\"]/div/div/div/div/div[2]/form/p[1]/label/input")).click();
+		driver.findElement(By.xpath("//*[@id=\"post-305\"]/div/div/div/div/div[2]/form/p[2]/button")).click();
+		//driver.findElement(By.linkText("Lost your password?")).click();
 		driver.findElement(By.partialLinkText("Forgot your")).click();
 		
 		
